@@ -4,9 +4,10 @@
 		var rooms = $firebaseArray(ref);
 		console.log(ref);
 		console.log(rooms);
+		// Nothing is logged.
 	}
 
 	angular
 		.module('kymlChat')
-		.factory('Room', ['$firebaseArray', Room])
+		.factory('Room', ['$firebaseArray', Room]);
 })();

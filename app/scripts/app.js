@@ -19,5 +19,3 @@
 		.module('kymlChat', ['ui.router'])
 		.config(config);
 })();
-
-// , 'firebase'

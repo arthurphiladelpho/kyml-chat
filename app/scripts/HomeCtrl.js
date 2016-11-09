@@ -5,5 +5,5 @@
 
 	angular
 		.module('kymlChat')
-		.controller('HomeCtrl', ['Room', HomeCtrl])
+		.controller('HomeCtrl', [HomeCtrl]);
 })();
