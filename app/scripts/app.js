@@ -1,6 +1,6 @@
 (function(){
 
-	function configure($stateProvider, $locationProvider) {
+	function config($stateProvider, $locationProvider) {
 		$locationProvider
 			.html5Mode({
 				enabled: true,
@@ -10,11 +10,14 @@
 		$stateProvider
       .state('home', {
           url: '/',
-          // controller: 'LandingCtrl as landing',
+          controller: 'HomeCtrl as home',
           templateUrl: '/templates/home.html'
-      })
+      });
 	}
 
 	angular
-		.module('kymlChat', ['firebase', 'ui.router'])
+		.module('kymlChat', ['ui.router'])
+		.config(config);
 })();
+
+// , 'firebase'
